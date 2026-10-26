@@ -1,18 +1,24 @@
 # Meysam Rajabi — academic website
 
-A static academic website based on the public content at [sites.google.com/view/meysamrajabi](https://sites.google.com/view/meysamrajabi), imported on October 26, 2026.
-
 Website: **https://meysamrajabi95.github.io/**
+
+The homepage preserves the information and biography from [the Google homepage](https://sites.google.com/view/meysamrajabi/home), checked on October 26, 2026. The compact typography, cyan accents, navigation, and publication layout follow the style requested from [b-fg.github.io/publications](https://b-fg.github.io/publications).
 
 ## Edit the site
 
-- `index.html` contains the biography, research, publications, teaching, education, news, and contact information. Section comments and descriptive IDs make content easy to find.
-- `assets/style.css` controls colors, type, spacing, and responsive layouts.
-- `assets/site.js` adds the mobile navigation and active section indicator. All core content, links, and expandable abstracts work without JavaScript.
-- `assets/images/` contains images copied from the original public Google site.
-- `SOURCE_NOTES.md` records the source pages and content decisions for future revisions.
+- `index.html`: biography, portrait and profile links, education, interests, tools and methods, academic service, and office/contact information.
+- `research/index.html`: wake dynamics, vortex-induced vibration, and flow sensing.
+- `publications/index.html`: all 11 publications/manuscripts, DOI/PDF links, three source abstracts, and BibTeX citations.
+- `teaching/index.html`: teaching experience and academic service.
+- `news/index.html`: teaching, conference, and outreach updates.
+- `assets/style.css`: shared typography, colors, light/dark themes, and responsive layouts.
+- `assets/site.js`: mobile navigation, theme switching, expandable publication panels, and copying BibTeX.
+- `assets/theme.js`: restores the selected theme before the page renders.
+- `assets/images/`: original images from the Google site.
+- `assets/fonts/`: self-hosted Inter fonts and their SIL Open Font License.
+- `SOURCE_NOTES.md`: source pages and content decisions.
 
-This site requires no package installation or build step. It uses system fonts and serves its images locally.
+The HTML files are directly editable. No package installation or build step is needed. The header and footer are repeated in the five pages; update all five when changing shared navigation. Publication details and navigation remain available when JavaScript is disabled. Original homepage section links to research, publications, teaching, and news redirect to their new pages when JavaScript is enabled.
 
 ## Local preview
 
@@ -22,16 +28,16 @@ From this directory, run:
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Then open http://127.0.0.1:8000/. Press Ctrl+C to stop the server. Opening `index.html` directly also works for reviewing the site.
+Open http://127.0.0.1:8000/. Press Ctrl+C to stop the server.
 
 ## GitHub Pages
 
-Publish from the `main` branch and the repository root: **Settings → Pages → Build and deployment → Deploy from a branch → main → /(root)**. The `.nojekyll` file lets GitHub serve the static files directly.
+Publish from the `main` branch and repository root: **Settings → Pages → Build and deployment → Deploy from a branch → main → /(root)**. The `.nojekyll` file lets GitHub serve the static files directly.
 
-To update the live website, commit changes to `main`. GitHub Pages republishes the site after its deployment completes.
+Commit updates to `main`; GitHub Pages republishes after its deployment completes.
 
 ## Content maintenance
 
-Keep published articles separate from manuscripts in progress. Change a manuscript's status only when confirmed. The first version preserves the source site's status labels and documented teaching semesters; it does not infer acceptance or later course assignments.
+Keep published articles separate from manuscripts in progress. Update a manuscript's status only when confirmed. BibTeX entries use the metadata already supplied on the original site; missing volumes/pages are not guessed. Manuscripts use `@unpublished`, with status and intended journal in the note.
 
-The initial migration omits the empty “Projects” and “Fluid Mechanics” placeholder pages. These can become full sections when content is ready. No CV download was added because the source site did not provide a CV file.
+The source's documented teaching semesters are preserved. Empty Projects and Fluid Mechanics pages were omitted. No CV download was added because the source did not supply a CV file.

@@ -12,7 +12,8 @@ Source reviewed: October 26, 2026. These notes support future editing; they are 
 
 ## Decisions preserved in this version
 
-- Wake dynamics leads the research description, followed by vortex-induced vibration and flow sensing.
+- The restyled homepage preserves the Google homepage's biography, profile/contact details, education, interests, full methods descriptions, and academic service. The live Google homepage was checked again on October 26, 2026, and matched the initial source snapshot.
+- Research, publications, teaching, and news now have separate static pages. Wake dynamics leads the research page, followed by vortex-induced vibration and flow sensing.
 - The public source identifies Meysam Rajabi as a PhD student, not a graduate or faculty member.
 - The three wake manuscripts retain the source labels “Under submission” or “Under review.” Their full abstracts remain available in expandable sections.
 - The source publication list gives “Ersegun Deniz” for the final author of the 2023 INTNAM entry. This was preserved rather than silently changing the bibliographic record; check the proceedings before correcting it.
@@ -23,10 +24,16 @@ Source reviewed: October 26, 2026. These notes support future editing; they are 
 - The B.Sc. source specifies Civil Engineering, Shiraz, Iran (2017), but no university name; this version leaves it unspecified.
 - Original images remain unmodified. The portrait is displayed using a responsive crop; the scientific flow image is displayed in full.
 
-## Images used on the first page
+## Images used on the site
 
 - `assets/images/meysam-rajabi.jpg`: original portrait from the homepage.
 - `assets/images/wake-overview.png`: original cylinder/wall/ridge flow visualization from the wake dynamics page.
 - `assets/images/news-aps-group.jpg`: original FSINLD group photograph from the News page.
 
 Other downloaded source images are retained locally in `.scratch/source-images/` for future edits. Only the images referenced by the site are published.
+
+## Style revision
+
+The user requested a style similar to https://b-fg.github.io/publications. The new styles use Inter typography, a light neutral header, cyan accents, compact numbered publication lists, and colored publication controls. The implementation is original; no reference-site scientific content, branding, or citation metrics were copied. The homepage content remains from Meysam's Google site.
+
+Inter is hosted locally from Google Fonts with its SIL Open Font License in `assets/fonts/OFL.txt`. The site has no remote font or script dependency. The three images above are used on the home, research, and news pages respectively.
