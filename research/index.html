@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f3f3">
   <title>Research | Meysam Rajabi</title>
-  <meta name="description" content="Meysam Rajabi, PhD student in Ocean and Resources Engineering at the University of Hawaiʻi at Mānoa. Research, publications, teaching, and contact information.">
+  <meta name="description" content="Research on wake dynamics, hydrodynamic loading, vortex-induced vibration, and pressure-based flow sensing by Meysam Rajabi at the University of Hawaiʻi at Mānoa.">
   <link rel="canonical" href="https://meysamrajabi95.github.io/research/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Research | Meysam Rajabi">
-  <meta property="og:description" content="Meysam Rajabi, PhD student in Ocean and Resources Engineering at the University of Hawaiʻi at Mānoa. Research, publications, teaching, and contact information.">
+  <meta property="og:description" content="Research on wake dynamics, hydrodynamic loading, vortex-induced vibration, and pressure-based flow sensing by Meysam Rajabi at the University of Hawaiʻi at Mānoa.">
   <meta property="og:url" content="https://meysamrajabi95.github.io/research/">
   <meta property="og:image" content="https://meysamrajabi95.github.io/assets/images/meysam-rajabi.jpg">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <script src="../assets/theme.js"></script>
   <link rel="stylesheet" href="../assets/style.css">
   <script src="../assets/site.js" defer></script>
+  <script src="../assets/research.js" defer></script>
 </head>
 <body data-page="research">
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -31,35 +32,97 @@
   </header>
   <main class="container page-content" id="main">
 <h1 class="page-title">Research</h1>
+<p class="page-intro research-intro">My research focuses on wake dynamics and fluid–structure interaction: how moving bodies and nearby boundaries change a flow, how those changes load a structure, and what pressure measurements can reveal about the surrounding environment.</p>
+<nav class="research-jump-links" aria-label="Research topics"><a href="#wake-dynamics">Wake dynamics</a><a href="#viv">Vortex-induced vibrations</a><a href="#flow-sensing">Flow sensing</a></nav>
 
-<p class="page-intro">Understanding how wakes develop, how they load nearby structures, and what their signals can tell us about the surrounding flow.</p>
-<div class="research-feature" id="wake-dynamics">
-<figure class="research-visual">
-<img alt="Flow visualization around a circular cylinder above a wall with a nearby ridge" height="828" loading="lazy" src="../assets/images/wake-overview.png" width="1280"/>
-<figcaption>Flow around a cylinder near a moving wall and ridge.</figcaption>
-</figure>
-<div>
-<span class="topic-number">01.1 / WAKE DYNAMICS</span>
-<h2>Wake dynamics &amp; hydrodynamic loading</h2>
-<p>Wakes contain separated shear layers and unsteady vortices. Their evolution changes the pressure and viscous stresses acting on a structure, producing mean and fluctuating forces.</p>
-<p>I study how nearby moving bodies and boundaries affect cylinder wakes and loading, including the roles of passage timing, wake recovery, and synchronization.</p>
-<a class="text-link" href="../publications/#wake-manuscripts">Related manuscripts <span aria-hidden="true">→</span></a>
-</div>
-</div>
-<div class="research-grid">
-<article class="research-topic" id="viv">
-<span class="topic-number">01.2 / VORTEX-INDUCED VIBRATION</span>
-<h2>Vortex-Induced Vibrations</h2>
-<p>Vortex-induced vibration arises from the interaction between vortex shedding and structural motion. My work examines the response of flexible cylinders and approaches to vibration control, with applications to marine risers, offshore structures, and flow-energy systems.</p>
-</article>
-<article class="research-topic" id="flow-sensing">
-<span class="topic-number">01.3 / FLOW SENSING</span>
-<h2>Flow Sensing</h2>
-<p>Changes in surface pressure can reveal information about nearby objects and flow conditions. I combine computational fluid dynamics, physics-based modeling, and data analysis to develop inverse models that infer the surrounding environment from flow-induced signals.</p>
-</article>
-</div>
-<div class="methods"><strong>Methods &amp; tools</strong><span>CFD &amp; experiments</span><span>Data analysis &amp; machine learning</span><span>Python · MATLAB · Julia</span></div>
+<section class="research-area" id="wake-dynamics" aria-labelledby="wake-title">
+  <h2 id="wake-title">Wake dynamics &amp; hydrodynamic loading</h2>
+  <p>I study how nearby moving bodies and boundaries disturb a cylinder wake and change its loading. Force histories, surface pressure, and synchronized flow fields connect the timing of a disturbance with the immediate load and the wake’s later response.</p>
+  <p>Current studies consider isolated and successive passages, recovery between encounters, and synchronization under periodic ridge passage. A central question is whether the wake state at arrival improves predictions of the next loading event. Another is whether a synchronized wake also produces smaller force fluctuations.</p>
+  <div class="research-studies">
+    <article class="research-study">
+      <div class="study-copy">
+        <p class="study-label">Periodic ridge passages <span class="status">Under submission</span></p>
+        <h3>Synchronization and force fluctuations</h3>
+        <p>Two-dimensional simulations at Re = 100 examine a cylinder near periodically spaced ridges on a moving wall. The study distinguishes a wake that follows ridge passage from one with reduced loading: synchronization can accompany either smaller or larger lift fluctuations.</p>
+        <a class="text-link" href="../publications/#Rajabi2026WakeSynchronization">Manuscript &amp; abstract →</a>
+      </div>
+      <figure class="research-figure">
+        <a class="figure-link" href="../assets/images/wake-ridges.png" target="_blank" rel="noopener" aria-label="Open full-size periodic ridge passage figure"><img src="../assets/images/wake-ridges.png" width="1280" height="528" alt="Periodic ridge configuration with velocity and pressure contours and drag plotted against ridge-passage phase" loading="lazy"></a>
+        <figcaption><strong>Periodic forcing.</strong> The ridge configuration, near-cylinder flow, and drag variation over a passage cycle. <a href="../assets/images/wake-ridges.png" target="_blank" rel="noopener">Full-size figure ↗</a></figcaption>
+      </figure>
+    </article>
+    <article class="research-study">
+      <div class="study-copy">
+        <p class="study-label">Phase and recovery <span class="status">Under review</span></p>
+        <h3>When the next disturbance arrives</h3>
+        <p>A passing ridge changes both the cylinder load and the timing of later vortex shedding. At Re = 100, I examine how arrival phase and recovery from an earlier disturbance affect the response to a following ridge, and when recovery information improves a phase-only prediction.</p>
+        <a class="text-link" href="../publications/#Rajabi2026PhaseRecovery">Manuscript &amp; abstract →</a>
+      </div>
+      <figure class="research-figure">
+        <a class="figure-link" href="../assets/images/wake-recovery.png" target="_blank" rel="noopener" aria-label="Open full-size ridge passage and recovery figure"><img src="../assets/images/wake-recovery.png" width="1280" height="308" alt="Single-ridge passage geometry and a flow-field view showing gap-flow acceleration near the cylinder" loading="lazy"></a>
+        <figcaption><strong>A transient encounter.</strong> Passage geometry and the change in streamwise velocity near closest approach. The later wake response depends on its state when the ridge arrives. <a href="../assets/images/wake-recovery.png" target="_blank" rel="noopener">Full-size figure ↗</a></figcaption>
+      </figure>
+    </article>
+    <article class="research-study">
+      <div class="study-copy">
+        <p class="study-label">Successive body passages <span class="status">Under review</span></p>
+        <h3>Geometry, clearance, and wake state</h3>
+        <p>Three-dimensional simulations at Re = 400 examine square and triangular bodies passing beneath a cylinder. I compare isolated and successive encounters to separate the effects of clearance, body shape, and the incoming wake state on the immediate and delayed loading.</p>
+        <a class="text-link" href="../publications/#Rajabi2026SuccessivePassages">Manuscript &amp; abstract →</a>
+      </div>
+      <figure class="research-figure">
+        <a class="figure-link" href="../assets/images/wake-successive.png" target="_blank" rel="noopener" aria-label="Open full-size successive body passage figure"><img src="../assets/images/wake-successive.png" width="1280" height="576" alt="Three-dimensional cylinder and passing-body configuration, pressure response versus clearance, and wake structures" loading="lazy"></a>
+        <figcaption><strong>Three-dimensional interactions.</strong> The computational setup, clearance-dependent pressure response, and flow structures around the cylinder and passing bodies. <a href="../assets/images/wake-successive.png" target="_blank" rel="noopener">Full-size figure ↗</a></figcaption>
+      </figure>
+    </article>
+  </div>
+  <p class="research-note">These studies use controlled cylinder–wall configurations. The two-dimensional ridge studies and three-dimensional body-passage simulations address different Reynolds numbers and geometries.</p>
+</section>
 
+<section class="research-area" id="viv" aria-labelledby="viv-title">
+  <h2 id="viv-title">Vortex-Induced Vibrations</h2>
+  <div class="research-topic-layout">
+    <div>
+      <p>Vortex-induced vibration couples unsteady vortex shedding with structural motion. I study both prescribed-motion cylinder wakes and the in-line and cross-flow response of flexible cylinders, with an interest in how motion and actuation affect the coupled flow–structure response.</p>
+      <p>This work includes numerical comparisons of two- and three-dimensional wakes and a published study of piezoelectric modulation of flexible-cylinder vibration. Understanding these interactions can inform vibration-control strategies for slender marine structures.</p>
+      <p class="research-question"><strong>Research question:</strong> How do imposed motion and actuation change the vibration response and the surrounding wake?</p>
+      <div class="research-paper-links"><a href="../publications/#Rajabi2026Piezoelectric">Flexible-cylinder study · 2026 →</a><a href="../publications/#Rajabi2023ForcedMotion">Forced-motion simulations · 2023 →</a></div>
+    </div>
+    <figure class="research-figure animation-figure">
+      <details class="research-animation" open>
+        <summary>Oscillating-cylinder wake <span class="animation-hide">Hide animation</span><span class="animation-show">Show animation</span></summary>
+        <img src="../assets/images/viv-cylinder.gif" width="311" height="205" alt="Animation of vortex shedding behind an oscillating cylinder">
+      </details>
+      <figcaption>Illustrative cylinder-wake animation from my original VIV research page. It shows the evolving wake as the cylinder moves.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="research-area" id="flow-sensing" aria-labelledby="sensing-title">
+  <h2 id="sensing-title">Pressure-based flow sensing</h2>
+  <div class="research-topic-layout">
+    <div>
+      <p>Surface pressure provides a way to infer nearby geometry from measurements on a structure itself. In a published study, I used three-dimensional simulations at Re = 200 to identify the gap between two stationary, equal-diameter cylinders. Pressure features were used to train inverse models, with Gaussian process regression giving the strongest performance in this benchmark.</p>
+      <p>The study also examined a sparse four-sensor layout and sensitivity to added noise. Performance was stronger for interpolation and unseen interior gap intervals than for extrapolation near the limits of the sampled range. Extending this approach to moving objects and more general geometries requires further validation.</p>
+      <p class="research-question"><strong>Research question:</strong> How much information about a nearby body can be recovered from a small set of surface-pressure measurements?</p>
+      <div class="research-paper-links"><a href="../publications/#Rajabi2026InverseIdentification">Gap-identification study · 2026 →</a><a href="https://doi.org/10.1016/j.oceaneng.2026.127988">Published article ↗</a></div>
+    </div>
+    <figure class="research-figure sensing-figure">
+      <a class="figure-link" href="../assets/images/research-sensing.jpg" target="_blank" rel="noopener" aria-label="Open full-size cylinder pressure-sensing figure"><img src="../assets/images/research-sensing.jpg" width="1280" height="1152" alt="Flow around two side-by-side cylinders with pressure-sampling locations marked on the upper sensing cylinder" loading="lazy"></a>
+      <figcaption><strong>Sensing from the surface.</strong> A side-by-side cylinder configuration with pressure-sampling locations marked on the sensing cylinder. The markers show an illustrative sampling arrangement; the published study also evaluates a sparse four-sensor layout. <a href="../assets/images/research-sensing.jpg" target="_blank" rel="noopener">Full-size figure ↗</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="research-area research-methods" aria-labelledby="research-methods-title">
+  <h2 id="research-methods-title">Methods &amp; tools</h2>
+  <div class="method-columns">
+    <div><h3>Flow and structural response</h3><p>Computational fluid dynamics and experiments to study wake evolution, hydrodynamic forces, and vibration.</p></div>
+    <div><h3>Signals and inverse models</h3><p>Pressure and force analysis, phase-based comparisons, and data-driven models that connect measured signals to flow conditions.</p></div>
+    <div><h3>Scientific computing</h3><p>Python, MATLAB, and Julia for simulation, data analysis, and model development.</p></div>
+  </div>
+</section>
   </main>
   <footer class="site-footer">
     <div class="container">

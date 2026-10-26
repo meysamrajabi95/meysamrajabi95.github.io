@@ -7,13 +7,14 @@ The homepage preserves the information and biography from [the Google homepage](
 ## Edit the site
 
 - `index.html`: biography, portrait and profile links, education, interests, tools and methods, academic service, and office/contact information.
-- `research/index.html`: wake dynamics, vortex-induced vibration, and flow sensing.
+- `research/index.html`: wake dynamics, vortex-induced vibration, and flow sensing, with study summaries and original research figures.
 - `publications/index.html`: all 11 publications/manuscripts, DOI/PDF links, three source abstracts, and BibTeX citations.
 - `teaching/index.html`: teaching experience and academic service.
-- `news/index.html`: teaching, conference, and outreach updates.
+- `news/index.html`: teaching, conference, and outreach updates with original photographs.
 - `assets/style.css`: shared typography, colors, light/dark themes, and responsive layouts.
 - `assets/site.js`: mobile navigation, theme switching, expandable publication panels, and copying BibTeX.
 - `assets/theme.js`: restores the selected theme before the page renders.
+- `assets/research.js`: respects reduced-motion preferences for the research animation.
 - `assets/images/`: original images from the Google site.
 - `assets/fonts/`: self-hosted Inter fonts and their SIL Open Font License.
 - `SOURCE_NOTES.md`: source pages and content decisions.

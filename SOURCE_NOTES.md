@@ -32,6 +32,14 @@ Source reviewed: October 26, 2026. These notes support future editing; they are 
 
 Other downloaded source images are retained locally in `.scratch/source-images/` for future edits. Only the images referenced by the site are published.
 
+## Research and News enrichment
+
+The Research page now includes the original `wake-ridges.png`, `wake-recovery.png`, `wake-successive.png`, `research-sensing.jpg`, and `viv-cylinder.gif` from the public Google site. Scientific figures remain uncropped and link to their original full-size files. The VIV animation is illustrative and is not presented as a result of the flexible-cylinder paper; visitors can hide it, and it starts hidden when reduced motion is requested.
+
+Wake-study descriptions follow the three manuscript abstracts and retain their status labels. The sensing description is supported by the published article https://doi.org/10.1016/j.oceaneng.2026.127988, including the Re = 200 configuration, inverse-model comparison, sparse sensor test, and limits of extrapolation. No effectiveness claim was added for piezoelectric control beyond the established scope of that paper.
+
+The News page includes all four original source photographs: `news-teaching.jpg`, `news-aps.jpg`, `news-aps-group.jpg`, and `news-open-house.jpg`. Each image accompanies its matching event, retains its original proportions, and links to the full-size file.
+
 ## Style revision
 
 The user requested a style similar to https://b-fg.github.io/publications. The new styles use Inter typography, a light neutral header, cyan accents, compact numbered publication lists, and colored publication controls. The implementation is original; no reference-site scientific content, branding, or citation metrics were copied. The homepage content remains from Meysam's Google site.
