@@ -40,6 +40,15 @@ Wake-study descriptions follow the three manuscript abstracts and retain their s
 
 The News page includes all four original source photographs: `news-teaching.jpg`, `news-aps.jpg`, `news-aps-group.jpg`, and `news-open-house.jpg`. Each image accompanies its matching event, retains its original proportions, and links to the full-size file.
 
+## College Physics Laboratory feedback
+
+The Teaching page embeds the same Google comment form and public response sheet as the [original Physics Lab page](https://sites.google.com/view/meysamrajabi/teaching/physics-lab), verified on October 26, 2026. The original form and sheet remain connected; their content and sharing settings were not changed. Direct links accompany both embeds. No test response was submitted.
+
+- Form: `https://docs.google.com/forms/d/e/1FAIpQLSdeqWFD6kUnnWq6eWy_3z_05Qnva1FZvGqVCNeZlY3uO57ARA/viewform`
+- Public comments: `https://docs.google.com/spreadsheets/d/1cPm-YaDHAC9wuaJipoqEdO4t_N9rGhff9kX9Cbl0ua0/htmlembed`
+
+The form has one comment field, with names and email addresses optional. The page explains that submitted comments are public. These are open-ended comments, not numerical teaching evaluations; no ratings or survey statistics were added. The course/semester labels in the Google page's carousel belong to classroom photographs.
+
 ## Style revision
 
 The user requested a style similar to https://b-fg.github.io/publications. The new styles use Inter typography, a light neutral header, cyan accents, compact numbered publication lists, and colored publication controls. The implementation is original; no reference-site scientific content, branding, or citation metrics were copied. The homepage content remains from Meysam's Google site.
