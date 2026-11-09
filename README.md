@@ -8,7 +8,7 @@ The homepage preserves the information and biography from [the Google homepage](
 
 - `index.html`: biography, portrait and profile links, education, interests, tools and methods, academic service, and office/contact information.
 - `research/index.html`: wake dynamics, vortex-induced vibration, and flow sensing, with study summaries and original research figures.
-- `publications/index.html`: all 11 publications/manuscripts, DOI/PDF links, three source abstracts, and BibTeX citations.
+- `publications/index.html`: all 12 publications/manuscripts, DOI/PDF links, three source abstracts, and available BibTeX citations.
 - `teaching/index.html`: teaching experience, academic service, and the original College Physics Laboratory feedback form and live comments.
 - `news/index.html`: teaching, conference, and outreach updates with original photographs.
 - `assets/style.css`: shared typography, colors, light/dark themes, and responsive layouts.

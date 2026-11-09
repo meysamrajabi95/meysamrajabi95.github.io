@@ -49,6 +49,10 @@ The Teaching page embeds the same Google comment form and public response sheet 
 
 The form has one comment field, with names and email addresses optional. The page explains that submitted comments are public. These are open-ended comments, not numerical teaching evaluations; no ratings or survey statistics were added. The course/semester labels in the Google page's carousel belong to classroom photographs.
 
+## Latest manuscript addition
+
+On November 8, 2026, the user supplied the title “Free vibration and energy exchange near a moving ridge train” and requested the status “Under submission.” It appears first under Manuscripts in progress. The exact title and author line (Meysam Rajabi and Ersegun D. Gedikli) were verified against the local manuscript dated October 30, 2026. The entry includes an unpublished BibTeX citation; no intended journal, abstract, or document link was added.
+
 ## Style revision
 
 The user requested a style similar to https://b-fg.github.io/publications. The new styles use Inter typography, a light neutral header, cyan accents, compact numbered publication lists, and colored publication controls. The implementation is original; no reference-site scientific content, branding, or citation metrics were copied. The homepage content remains from Meysam's Google site.
