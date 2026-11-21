@@ -40,6 +40,11 @@
   object-fit: contain;
 }
 
+.topic-image-wide,
+.topic-image-wide img {
+  height: auto;
+}
+
 .topic-caption {
   padding: 1.5rem 1.5rem 2.25rem;
 }
