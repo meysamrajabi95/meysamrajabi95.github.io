@@ -63,10 +63,8 @@
 
 .topic-caption p {
   color: var(--muted);
-  font-size: .75rem;
-  font-weight: 600;
+  font-size: 1rem;
   line-height: 1.6;
-  letter-spacing: .08em;
 }
 
 @media (prefers-reduced-motion: no-preference) {

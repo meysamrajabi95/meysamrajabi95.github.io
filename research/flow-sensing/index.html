@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f3f3">
   <title>Flow sensing | Meysam Rajabi</title>
-  <meta name="description" content="Using surface-pressure measurements and inverse models to infer the gap between two cylinders in a flow.">
+  <meta name="description" content="Meysam Rajabi studies what pressure sensors on a structure can reveal about the surrounding flow and nearby bodies.">
   <link rel="canonical" href="https://meysamrajabi95.github.io/research/flow-sensing/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Flow sensing | Meysam Rajabi">
-  <meta property="og:description" content="Using surface-pressure measurements and inverse models to infer the gap between two cylinders in a flow.">
+  <meta property="og:description" content="Meysam Rajabi studies what pressure sensors on a structure can reveal about the surrounding flow and nearby bodies.">
   <meta property="og:url" content="https://meysamrajabi95.github.io/research/flow-sensing/">
   <meta property="og:image" content="https://meysamrajabi95.github.io/assets/images/research-sensing.jpg">
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
@@ -33,24 +33,25 @@
   <nav aria-label="Research navigation"><a href="../">All research</a></nav>
 <section class="research-area" id="flow-sensing" aria-labelledby="sensing-title">
   <h1 class="page-title" id="sensing-title">Flow sensing</h1>
+  <p>I study what a structure can sense about its surroundings through the pressure on its surface. When a nearby body changes the flow, it also changes how pressure varies around the structure and over time. I use these pressure patterns to investigate which features of the surrounding flow or nearby geometry can be inferred from measurements on the structure itself.</p>
+  <p id="research-methods-title">A central question is how much of that information a small set of sensors can capture. Two configurations may produce similar readings at one location and different readings elsewhere on the surface. I use flow simulations to compare sensor locations and test how reliably an inverse model can distinguish configurations when measurements contain noise or the model encounters conditions outside its training range.</p>
+</section>
+
+<section class="research-area" aria-labelledby="sensing-example-title">
+  <h2 id="sensing-example-title">Estimating the gap between cylinders</h2>
   <div class="research-topic-layout">
     <div>
-      <p>Surface pressure provides a way to infer nearby geometry from measurements on a structure itself. In a published study, I used three-dimensional simulations at Re = 200 to identify the gap between two stationary, equal-diameter cylinders. Pressure features were used to train inverse models, with Gaussian process regression giving the strongest performance in this benchmark.</p>
-      <p>The study also examined a sparse four-sensor layout and sensitivity to added noise. Performance was stronger for interpolation and unseen interior gap intervals than for extrapolation near the limits of the sampled range. Extending this approach to moving objects and more general geometries requires further validation.</p>
-      <p class="research-question"><strong>Research question:</strong> How much information about a nearby body can be recovered from a small set of surface-pressure measurements?</p>
+      <p>In one study, I asked whether pressure on one cylinder could reveal the distance to a second cylinder beside it. I varied the gap between two stationary, equal-diameter cylinders in three-dimensional simulations at Re = 200. The figure shows the flow around the pair and the sampling locations on the upper cylinder.</p>
+      <p>I compared inverse models, evaluated a four-sensor layout, and tested sensitivity to added noise. Gaussian process regression gave the strongest predictions in this benchmark. The models estimated unseen gaps within the sampled range more reliably than gaps requiring extrapolation. Extending this result to moving bodies or other geometries requires further validation.</p>
       <div class="research-paper-links"><a href="../../publications/#Rajabi2026InverseIdentification">Gap-identification study · 2026 →</a><a href="https://doi.org/10.1016/j.oceaneng.2026.127988">Published article ↗</a></div>
     </div>
     <figure class="research-figure sensing-figure">
       <a class="figure-link" href="../../assets/images/research-sensing.jpg" target="_blank" rel="noopener" aria-label="Open full-size cylinder pressure-sensing figure"><img src="../../assets/images/research-sensing.jpg" width="1280" height="1152" alt="Flow around two side-by-side cylinders with pressure-sampling locations marked on the upper sensing cylinder" loading="lazy"></a>
-      <figcaption><strong>Sensing from the surface.</strong> A side-by-side cylinder configuration with pressure-sampling locations marked on the sensing cylinder. The markers show an illustrative sampling arrangement; the published study also evaluates a sparse four-sensor layout. <a href="../../assets/images/research-sensing.jpg" target="_blank" rel="noopener">Full-size figure ↗</a></figcaption>
+      <figcaption>The markers on the upper cylinder show an illustrative pressure-sampling arrangement. The study also evaluates a four-sensor layout. <a href="../../assets/images/research-sensing.jpg" target="_blank" rel="noopener">Full-size figure ↗</a></figcaption>
     </figure>
   </div>
 </section>
 
-<section class="research-area research-methods" aria-labelledby="research-methods-title">
-  <h2 id="research-methods-title">Signals and inverse models</h2>
-  <p>I analyze pressure and force signals, compare responses at different phases, and develop data-driven models that relate measured signals to flow conditions.</p>
-</section>
   </main>
   <footer class="site-footer">
     <div class="container">

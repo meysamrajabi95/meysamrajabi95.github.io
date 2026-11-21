@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f3f3">
   <title>Wake dynamics | Meysam Rajabi</title>
-  <meta name="description" content="How passing bodies and moving ridges alter a cylinder wake, the timing of vortex shedding, and hydrodynamic loads.">
+  <meta name="description" content="Meysam Rajabi studies how wakes form and recover behind bluff bodies and how changes in vortex shedding affect pressure, lift, and drag.">
   <link rel="canonical" href="https://meysamrajabi95.github.io/research/wake-dynamics/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Wake dynamics | Meysam Rajabi">
-  <meta property="og:description" content="How passing bodies and moving ridges alter a cylinder wake, the timing of vortex shedding, and hydrodynamic loads.">
+  <meta property="og:description" content="Meysam Rajabi studies how wakes form and recover behind bluff bodies and how changes in vortex shedding affect pressure, lift, and drag.">
   <meta property="og:url" content="https://meysamrajabi95.github.io/research/wake-dynamics/">
   <meta property="og:image" content="https://meysamrajabi95.github.io/assets/images/wake-overview.png">
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
@@ -33,16 +33,24 @@
   <nav aria-label="Research navigation"><a href="../">All research</a></nav>
 <section class="research-area" id="wake-dynamics" aria-labelledby="wake-title">
   <h1 class="page-title" id="wake-title">Wake dynamics</h1>
-  <p>My research focuses on wake dynamics and fluid–structure interaction. I study how moving bodies and nearby boundaries change the flow, how those changes load a structure, and what pressure measurements reveal about the surrounding environment.</p>
-  <p>For a cylinder exposed to a passing body or ridge, I use force histories, surface pressure, and synchronized flow fields to connect the timing of the disturbance with the immediate load and the wake’s later response.</p>
-  <p>Current studies consider isolated and successive passages, recovery between encounters, and synchronization under periodic ridge passage. A central question is whether the wake state at arrival improves predictions of the next loading event. Another is whether a synchronized wake also produces smaller force fluctuations.</p>
+  <p>When water flows past a bluff body such as a cylinder, the flow separates from its surface and forms a wake downstream. Vortices shed from alternating sides can produce an oscillating lift force even when the cylinder is fixed. I study how nearby bodies and boundaries change the formation and shedding of those vortices, and how the resulting pressure changes affect lift and drag.</p>
+  <p>A passing body can change the cylinder load as it approaches and shift the timing of vortex shedding after it has passed. If a second body arrives while the wake is still recovering, how much of the next load can we predict from the state of the wake at that instant? When disturbances recur at regular intervals, I also ask when the wake synchronizes with them and how the amplitude of the forces changes.</p>
+</section>
+
+<section class="research-area" aria-labelledby="research-methods-title">
+  <h2 id="research-methods-title">How I study wakes</h2>
+  <p>I compare velocity fields, surface pressure, and force histories at the same instant in a simulation. The velocity field shows where the flow separates and how the vortices develop. The pressure distribution helps explain which parts of the cylinder contribute to a change in loading. Tracking these quantities over several shedding cycles shows how long a disturbance persists.</p>
+  <p>I use controlled geometries to vary the timing, spacing, and clearance of passing bodies. I compare runs at the same stage of vortex shedding to examine the effect of an earlier encounter. My simulation and analysis tools include Julia, MATLAB, and Python.</p>
+</section>
+
+<section class="research-area" aria-labelledby="wake-examples">
+  <h2 id="wake-examples">Examples from my research</h2>
   <div class="research-studies">
-    <h2>Studies</h2>
     <article class="research-study">
       <div class="study-copy">
         <p class="study-label">Periodic ridge passages <span class="status">Under submission</span></p>
         <h3>Synchronization and force fluctuations</h3>
-        <p>Two-dimensional simulations at Re = 100 examine a cylinder near periodically spaced ridges on a moving wall. The study distinguishes a wake that follows ridge passage from one with reduced loading: synchronization can accompany either smaller or larger lift fluctuations.</p>
+        <p>In two-dimensional simulations at Reynolds number Re = 100, I varied the spacing of ridges on a moving wall. Two spacings synchronized the wake with the ridge passages. Relative to the smooth-wall case, one reduced lift fluctuations and the other increased them.</p>
         <a class="text-link" href="../../publications/#Rajabi2026WakeSynchronization">Manuscript &amp; abstract →</a>
       </div>
       <figure class="research-figure">
@@ -75,12 +83,7 @@
       </figure>
     </article>
   </div>
-  <p class="research-note">These studies use controlled cylinder–wall configurations. The two-dimensional ridge studies and three-dimensional body-passage simulations address different Reynolds numbers and geometries.</p>
-</section>
-
-<section class="research-area research-methods" aria-labelledby="research-methods-title">
-  <h2 id="research-methods-title">Scientific computing</h2>
-  <p>I use Python, MATLAB, and Julia for simulation, data analysis, and model development.</p>
+  <p class="research-note">The two-dimensional ridge cases and the three-dimensional passing-body cases differ in both geometry and Reynolds number. Their force magnitudes are specific to those conditions.</p>
 </section>
   </main>
   <footer class="site-footer">
