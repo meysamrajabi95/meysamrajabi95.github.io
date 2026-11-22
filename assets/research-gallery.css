@@ -49,6 +49,16 @@
   height: auto;
 }
 
+/* Enlarge the original image area by 15%, up to the width of the card. */
+#flow-sensing .topic-image {
+  height: calc(1rem + (150px - 1rem) * 1.15);
+  padding-inline: 0;
+}
+
+#flow-sensing .topic-image img {
+  width: min(100%, calc((100% - 2rem) * 1.15));
+}
+
 .topic-caption {
   padding: 1.5rem 1.5rem 2.25rem;
 }
