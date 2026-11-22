@@ -40,8 +40,12 @@
   object-fit: contain;
 }
 
-.topic-image-wide,
+.topic-image-wide {
+  height: auto;
+}
+
 .topic-image-wide img {
+  width: 80%;
   height: auto;
 }
 
